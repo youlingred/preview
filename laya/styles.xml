@@ -1,0 +1,5 @@
+<res>
+   <item name="template/List/vscroll.png" type="VScrollBar" compress="0" pack="1" quality="80" props="" picType="0"/>
+   <item name="home.png" type="Image" compress="0" pack="1" quality="80" props="" picType="0"/>
+   <item name="btn_blue.png" type="Button" compress="0" pack="0" quality="80" props="" picType="0"/>
+</res>

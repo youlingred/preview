@@ -2,8 +2,8 @@
     "x":0,
     "type":"View",
     "selectedBox":1,
-    "selecteID":11,
-    "props":{"width":375,"sceneColor":"#fffbf2","height":667},
+    "selecteID":14,
+    "props":{"width":355,"sceneWidth":355,"sceneHeight":567,"sceneColor":"#fffbf2","height":567},
     "nodeParent":-1,
     "label":"View",
     "isOpen":true,
@@ -53,19 +53,6 @@
         },
         {
             "x":15,
-            "type":"TextArea",
-            "props":{"x":47,"width":276,"var":"content","top":100,"text":"TextArea","overflow":"scroll","multiline":true,"mouseEnabled":true,"editable":false,"bottom":193,"align":"center"},
-            "nodeParent":1,
-            "label":"TextArea(content)",
-            "isDirectory":false,
-            "isAniNode":true,
-            "hasChild":false,
-            "compId":10,
-            "child":[
-                ]
-        },
-        {
-            "x":15,
             "type":"Button",
             "props":{"var":"btn_again","skin":"comp/button.png","label":"再来一遍","centerX":0,"bottom":100},
             "nodeParent":1,
@@ -89,6 +76,45 @@
             "compId":14,
             "child":[
                 ]
+        },
+        {
+            "x":15,
+            "type":"Panel",
+            "props":{"width":263,"visible":true,"vScrollBarSkin":"comp/vscroll.png","top":120,"mouseEnabled":true,"height":247,"centerX":0,"bottom":200,"alpha":1},
+            "nodeParent":1,
+            "label":"Panel",
+            "isOpen":true,
+            "isDirectory":true,
+            "isAniNode":true,
+            "hasChild":true,
+            "compId":17,
+            "child":[
+                {
+                    "x":30,
+                    "type":"Box",
+                    "props":{"y":0,"x":0,"var":"textBox","mouseEnabled":true},
+                    "nodeParent":17,
+                    "label":"Box(textBox)",
+                    "isOpen":true,
+                    "isDirectory":true,
+                    "isAniNode":true,
+                    "hasChild":true,
+                    "compId":21,
+                    "child":[
+                        {
+                            "x":45,
+                            "type":"HTMLDivElement",
+                            "props":{"y":0,"x":0,"width":263,"var":"content","mouseEnabled":true,"innerHTML":"htmlText","height":301},
+                            "nodeParent":21,
+                            "label":"HTMLDivElement(content)",
+                            "isDirectory":false,
+                            "isAniNode":true,
+                            "hasChild":false,
+                            "compId":16,
+                            "child":[
+                                ]
+                        }]
+                }]
         }],
     "animations":[
         {

@@ -56,9 +56,10 @@ var SceneIndexUI=(function(_super){
 			
 		    this.title_en=null;
 		    this.title_zh=null;
-		    this.content=null;
 		    this.btn_again=null;
 		    this.btn_start=null;
+		    this.textBox=null;
+		    this.content=null;
 
 			SceneIndexUI.__super.call(this);
 		}
@@ -66,13 +67,14 @@ var SceneIndexUI=(function(_super){
 		CLASS$(SceneIndexUI,'ui.test.SceneIndexUI',_super);
 		var __proto__=SceneIndexUI.prototype;
 		__proto__.createChildren=function(){
-		    
+		    			View.regComponent("HTMLDivElement",laya.html.dom.HTMLDivElement);
+
 			laya.ui.Component.prototype.createChildren.call(this);
 			this.createView(SceneIndexUI.uiView);
 
 		}
 
-		SceneIndexUI.uiView={"type":"View","props":{"width":375,"height":667},"child":[{"type":"Image","props":{"top":0,"skin":"index_title_bg.png","centerX":0}},{"type":"Label","props":{"width":261,"var":"title_en","valign":"middle","top":2,"text":"label","height":33,"fontSize":16,"color":"FFFFFF","centerX":0,"bold":false,"align":"center"}},{"type":"Label","props":{"width":261,"var":"title_zh","valign":"middle","top":28,"text":"label","height":33,"fontSize":16,"color":"FFFFFF","centerX":1,"bold":false,"align":"center"}},{"type":"TextArea","props":{"x":47,"width":276,"var":"content","top":100,"text":"TextArea","overflow":"scroll","multiline":true,"mouseEnabled":true,"editable":false,"bottom":193,"align":"center"}},{"type":"Button","props":{"var":"btn_again","skin":"comp/button.png","label":"再来一遍","centerX":0,"bottom":100}},{"type":"Button","props":{"var":"btn_start","skin":"comp/button.png","label":"开始","centerX":0,"bottom":100}}]};
+		SceneIndexUI.uiView={"type":"View","props":{"width":355,"height":567},"child":[{"type":"Image","props":{"top":0,"skin":"index_title_bg.png","centerX":0}},{"type":"Label","props":{"width":261,"var":"title_en","valign":"middle","top":2,"text":"label","height":33,"fontSize":16,"color":"FFFFFF","centerX":0,"bold":false,"align":"center"}},{"type":"Label","props":{"width":261,"var":"title_zh","valign":"middle","top":28,"text":"label","height":33,"fontSize":16,"color":"FFFFFF","centerX":1,"bold":false,"align":"center"}},{"type":"Button","props":{"var":"btn_again","skin":"comp/button.png","label":"再来一遍","centerX":0,"bottom":100}},{"type":"Button","props":{"var":"btn_start","skin":"comp/button.png","label":"开始","centerX":0,"bottom":100}},{"type":"Panel","props":{"width":263,"visible":true,"vScrollBarSkin":"comp/vscroll.png","top":120,"mouseEnabled":true,"height":247,"centerX":0,"bottom":200,"alpha":1},"child":[{"type":"Box","props":{"y":0,"x":0,"var":"textBox","mouseEnabled":true},"child":[{"type":"HTMLDivElement","props":{"y":0,"x":0,"width":263,"var":"content","mouseEnabled":true,"innerHTML":"htmlText","height":301}}]}]}]};
 		return SceneIndexUI;
 	})(View);
 var SceneListUI=(function(_super){

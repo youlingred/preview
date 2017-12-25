@@ -2,7 +2,7 @@
     "x":0,
     "type":"View",
     "selectedBox":1,
-    "selecteID":4,
+    "selecteID":6,
     "props":{"width":375,"sceneColor":"#fffbf2","height":667},
     "nodeParent":-1,
     "label":"View",
@@ -41,7 +41,7 @@
         {
             "x":15,
             "type":"Button",
-            "props":{"x":55,"width":96,"var":"btn_again","label":"again","height":31,"bottom":120},
+            "props":{"x":55,"width":96,"var":"btn_again","skin":"comp/button.png","label":"again","height":31,"bottom":120},
             "nodeParent":1,
             "label":"Button(btn_again)",
             "isDirectory":false,
@@ -54,7 +54,7 @@
         {
             "x":15,
             "type":"Button",
-            "props":{"x":209,"width":96,"var":"btn_review","label":"review","height":31,"bottom":120},
+            "props":{"x":209,"width":96,"var":"btn_review","skin":"comp/button.png","label":"review","height":31,"bottom":120},
             "nodeParent":1,
             "label":"Button(btn_review)",
             "isDirectory":false,
@@ -67,7 +67,7 @@
         {
             "x":15,
             "type":"Button",
-            "props":{"x":89.5,"width":197,"var":"btn_share","label":"share","height":31,"bottom":58},
+            "props":{"x":89.5,"width":197,"var":"btn_share","skin":"comp/button.png","label":"share","height":31,"bottom":58},
             "nodeParent":1,
             "label":"Button(btn_share)",
             "isDirectory":false,

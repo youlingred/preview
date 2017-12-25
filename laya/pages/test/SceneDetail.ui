@@ -2,7 +2,7 @@
     "x":0,
     "type":"View",
     "selectedBox":1,
-    "selecteID":2,
+    "selecteID":12,
     "props":{"width":375,"sceneColor":"#fffbf2","height":667,"centerX":0},
     "nodeParent":-1,
     "label":"View",
@@ -80,7 +80,7 @@
         {
             "x":15,
             "type":"Button",
-            "props":{"x":142,"width":96,"var":"btn_r","label":"record","height":31,"bottom":30},
+            "props":{"x":142,"width":96,"var":"btn_r","skin":"comp/button.png","label":"record","height":31,"bottom":30},
             "nodeParent":1,
             "label":"Button(btn_r)",
             "isDirectory":false,
@@ -93,7 +93,7 @@
         {
             "x":15,
             "type":"Button",
-            "props":{"x":9,"width":96,"var":"btn_t","label":"teacher","height":31,"bottom":30},
+            "props":{"x":9,"width":96,"var":"btn_t","skin":"comp/button.png","label":"teacher","height":31,"bottom":30},
             "nodeParent":1,
             "label":"Button(btn_t)",
             "isDirectory":false,
@@ -106,7 +106,7 @@
         {
             "x":15,
             "type":"Button",
-            "props":{"x":256,"width":96,"var":"btn_s","label":"replay","height":31,"bottom":30},
+            "props":{"x":256,"width":96,"var":"btn_s","skin":"comp/button.png","label":"replay","height":31,"bottom":30},
             "nodeParent":1,
             "label":"Button(btn_s)",
             "isDirectory":false,

@@ -65,7 +65,7 @@ var Utils = window.MUtils = {
         if (WXSTAT.configData && WXSTAT.sdkload) {
             /*config*/
             wx.config($.extend(WXSTAT.configData, {
-                debug:true,
+                // debug:true,
                 jsApiList: WXSTAT.apiList
             }));
             WXSTAT.ready = true;

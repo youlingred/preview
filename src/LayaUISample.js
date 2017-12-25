@@ -33,29 +33,29 @@ function onAssetLoaded()
 	scDetail=new SceneDetail();
 
 	Laya.stage.addChild(scList);
-	scList.on("intoHome",null,onIntoHome)
+	scList.on("intoHome",this,onIntoHome)
 }
 function onIntoHome(event){
 	Laya.stage.removeChild(scList);
 	Laya.stage.addChild(scHome);
-	scHome.on("intoIndex",null,onIntoIndex)
+	scHome.on("intoIndex",this,onIntoIndex)
 }
 function onIntoIndex(event){
 	Laya.stage.removeChild(scHome);
 	Laya.stage.addChild(scIndex);
-	scIndex.on("intoDetail",null,onIntoDetail)
+	scIndex.on("intoDetail",this,onIntoDetail)
 }
 function onIntoDetail(event){
 	Laya.stage.removeChild(scIndex);
 	Laya.stage.addChild(scDetail);
-	scDetail.on("detailBackIndex",null,onDetailBackIndex)
-	scDetail.on("intoSuccess",null,onIntoSuccess)
+	scDetail.on("detailBackIndex",this,onDetailBackIndex)
+	scDetail.on("intoSuccess",this,onIntoSuccess)
 }
 function onIntoSuccess(event){
 	Laya.stage.removeChild(scSuccess);
 	Laya.stage.addChild(scSuccess);
-	scSuccess.on("backIndex",null,onBackIndex)
-	scSuccess.on("backDetail",null,onBackDetail)
+	scSuccess.on("backIndex",this,onBackIndex)
+	scSuccess.on("backDetail",this,onBackDetail)
 }
 function onDetailBackIndex(event){
 	Laya.stage.removeChild(scDetail);

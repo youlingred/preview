@@ -27,7 +27,7 @@ function SceneIndex() {
         xhr.once(Event.COMPLETE, this, completeHandler);
         xhr.once(Event.ERROR, this, errorHandler);
         xhr.on(Event.PROGRESS, this, processHandler);
-        xhr.send(util.apiPath + "preview/" + util.dataCache.lesson.id, "", "get");
+        xhr.send(util.apiPath + "preview/" + util.dataCache.lessonGeneral.id, "", "get");
     }
     function processHandler(res) {
     }

@@ -48,6 +48,7 @@ function onIntoIndex(event){
 function onIntoDetail(event){
 	Laya.stage.removeChild(scIndex);
 	Laya.stage.addChild(scDetail);
+	scDetail.on("detailBackIndex",null,onDetailBackIndex)
 	scDetail.on("intoSuccess",null,onIntoSuccess)
 }
 function onIntoSuccess(event){
@@ -56,9 +57,13 @@ function onIntoSuccess(event){
 	scSuccess.on("backIndex",null,onBackIndex)
 	scSuccess.on("backDetail",null,onBackDetail)
 }
+function onDetailBackIndex(event){
+	Laya.stage.removeChild(scDetail);
+	Laya.stage.addChild(scIndex);
+}
 function onBackIndex(event){
 	Laya.stage.removeChild(scSuccess);
-	Laya.stage.addChild(scSuccess);
+	Laya.stage.addChild(scIndex);
 }
 function onBackDetail(event){
 	Laya.stage.removeChild(scSuccess);

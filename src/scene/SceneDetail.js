@@ -49,7 +49,7 @@ function SceneDetail() {
      function prev(){
         pageIndex--
         if(pageIndex<0){
-            ui.event("backIndex");
+            ui.event("detailBackIndex");
             return;
         }
         showPage()

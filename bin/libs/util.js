@@ -3,6 +3,7 @@
         apiPath:"https://mobile.mmears.com/preview/api/",
         dataCache:{
             bgMusic:"https://mobile.mmears.com/mmears-preview-source/dist/static/wav/background.mp3",//背景音乐地址
+            lessonGeneral:{},//课程概要
             lesson:{},//当前课程数据
             pages:{},//页数据
             pageIndex:0,

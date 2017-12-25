@@ -57,7 +57,7 @@ function SceneList() {
         btn_start.on(Event.CLICK,data,onBtnStart);
     }
     function onBtnStart(event){
-        util.dataCache.lesson=this;
+        util.dataCache.lessonGeneral=this;
         ui.event("intoHome");
     }
 }
